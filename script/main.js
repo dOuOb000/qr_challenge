@@ -28,7 +28,7 @@ const content = document.getElementById('content');
 if (code === null) {
   //Default case
   const h2 = document.createElement('h2');
-  msg.textContent = 'QR code 挑戰';
+  h2.textContent = 'QR code 挑戰';
   const msg1 = document.createElement('p');
   msg.textContent = '玩法：掃描QR code有機會進入下一層';
   const msg2 = document.createElement('p');
@@ -85,7 +85,7 @@ else{
     }
     else {
       const h2 = document.createElement('h2');
-      msg.textContent = '殘念！';
+      h2.textContent = '殘念！';
       const msg = document.createElement('p');
       msg.textContent = `總得分：${level-1}`;
       const img = document.createElement('img');
