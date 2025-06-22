@@ -27,12 +27,18 @@ const content = document.getElementById('content');
 
 if (code === null) {
   //Default case
-  const msg = document.createElement('p');
-  msg.textContent = 'QR code 挑戰\n玩法：掃描QR code有機會進入下一層\n(為了最佳遊戲體驗，請不要使用“存檔功能”)';
+  const h2 = document.createElement('h2');
+  msg.textContent = 'QR code 挑戰';
+  const msg1 = document.createElement('p');
+  msg.textContent = '玩法：掃描QR code有機會進入下一層';
+  const msg2 = document.createElement('p');
+  msg.textContent = '(為了最佳遊戲體驗，請不要使用“存檔功能”)';
   const img = document.createElement('img');
   img.src = 'image/qr/1.png';
   img.alt = '開始遊戲';
-  content.appendChild(msg);
+  content.appendChild(h2);
+  content.appendChild(msg1);
+  content.appendChild(msg2);
   content.appendChild(img);
 }
 else{
@@ -49,8 +55,10 @@ else{
     content.appendChild(btn);
   }
   else if (level === 69) {
+    const h2 = document.createElement('h2');
+    h2.textContent = '你贏了🎉';
     const msg = document.createElement('p');
-    msg.textContent = '你贏了🎉\n成功到達69層！';
+    msg.textContent = '成功到達第69層！';
     const img = document.createElement('img');
     img.src = `image/cat.gif`
     img.alt = '你贏了';
@@ -59,6 +67,7 @@ else{
     btn.onclick = function () {
       window.location.href = 'https://douob000.github.io/qr_challenge/';
     };
+    content.appendChild(h2);
     content.appendChild(msg);
     content.appendChild(img);
     content.appendChild(btn);
@@ -75,8 +84,10 @@ else{
       content.appendChild(img);
     }
     else {
+      const h2 = document.createElement('h2');
+      msg.textContent = '殘念！';
       const msg = document.createElement('p');
-      msg.textContent = `殘念！\n總得分：${level-1}`;
+      msg.textContent = `總得分：${level-1}`;
       const img = document.createElement('img');
       img.src = `image/rick.gif`
       img.alt = '你輸了';
@@ -85,6 +96,7 @@ else{
       btn.onclick = function () {
         window.location.href = 'https://douob000.github.io/qr_challenge/';
       };
+      content.appendChild(h2);
       content.appendChild(msg);
       content.appendChild(img);
       content.appendChild(btn);
