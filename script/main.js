@@ -1,3 +1,7 @@
+function decodeLevel(str) {
+  return parseInt(str.slice(1)) - 13;
+}
+
 function generateHash(level, secret = 'SALT123') {
   const raw = `${level}-${secret}`;
   let hash = 0;
@@ -30,9 +34,9 @@ if (code === null) {
   const h2 = document.createElement('h2');
   h2.textContent = 'QR code 挑戰';
   const msg1 = document.createElement('p');
-  msg1.textContent = '玩法：掃描QR code有機會進入下一層';
+  msg.textContent = '玩法：掃描QR code有機會進入下一層';
   const msg2 = document.createElement('p');
-  msg2.textContent = '(為了最佳遊戲體驗，請不要使用“存檔功能”)';
+  msg.textContent = '(為了最佳遊戲體驗，請不要使用“存檔功能”)';
   const img = document.createElement('img');
   img.src = 'image/qr/1.png';
   img.alt = '開始遊戲';
