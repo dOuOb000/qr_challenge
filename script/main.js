@@ -91,31 +91,3 @@ else{
     }
   }
 }
-
-if (code === '69420') {
-  // 顯示圖片
-  const img = document.createElement('img');
-  img.src = 'image/temp1.jpg'; // ← 換成你要顯示的圖片網址
-  img.alt = 'Secret Image';
-  content.appendChild(img);
-
-} else if (code === '42') {
-  // 直接跳轉
-  window.location.href = 'https://youtu.be/dQw4w9WgXcQ'; // ← 換成你要導向的網址
-
-} else if (code === '1729') {
-  // 顯示按鈕，點下去才跳轉
-  const msg = document.createElement('p');
-  msg.textContent = '恭喜中獎🎉';
-  const btn = document.createElement('button');
-  btn.textContent = '前往';
-  btn.onclick = function () {
-    window.location.href = 'https://youtu.be/dQw4w9WgXcQ'; // ← 換成你要導向的網址
-  };
-  content.appendChild(msg);
-  content.appendChild(btn);
-
-} else {
-  // 預設顯示文字
-  content.textContent = '請輸入正確的代碼才能看到秘密內容。';
-}
