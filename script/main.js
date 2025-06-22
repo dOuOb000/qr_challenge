@@ -1,8 +1,7 @@
-/*
 function decodeLevel(str) {
   return parseInt(str.slice(1)) - 13;
 }
-*/
+
 function generateHash(level, secret = 'SALT123') {
   const raw = `${level}-${secret}`;
   let hash = 0;
@@ -45,7 +44,7 @@ if (code === null) {
   content.appendChild(msg1);
   content.appendChild(msg2);
   content.appendChild(img);
-}
+}/*
 else{
   const level = validatePasscode(code);
   if (level === null || level <= 0 || level > 69) {
@@ -108,3 +107,4 @@ else{
     }
   }
 }
+*/
