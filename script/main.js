@@ -12,8 +12,8 @@ function generateHash(level, secret = 'SALT123') {
 }
 
 function validatePasscode(passcode) {
-  const levelPart = passcode.slice(0, 2);
-  const hashPart = passcode.slice(2);
+  const levelPart = passcode.slice(0, 3);
+  const hashPart = passcode.slice(3);
   const level = decodeLevel(levelPart);
 
   const expectedHash = generateHash(level);
