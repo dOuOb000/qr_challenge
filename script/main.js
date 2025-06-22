@@ -30,9 +30,9 @@ if (code === null) {
   const h2 = document.createElement('h2');
   h2.textContent = 'QR code 挑戰';
   const msg1 = document.createElement('p');
-  msg.textContent = '玩法：掃描QR code有機會進入下一層';
+  msg1.textContent = '玩法：掃描QR code有機會進入下一層';
   const msg2 = document.createElement('p');
-  msg.textContent = '(為了最佳遊戲體驗，請不要使用“存檔功能”)';
+  msg2.textContent = '(為了最佳遊戲體驗，請不要使用“存檔功能”)';
   const img = document.createElement('img');
   img.src = 'image/qr/1.png';
   img.alt = '開始遊戲';
