@@ -1,7 +1,8 @@
+/*
 function decodeLevel(str) {
   return parseInt(str.slice(1)) - 13;
 }
-
+*/
 function generateHash(level, secret = 'SALT123') {
   const raw = `${level}-${secret}`;
   let hash = 0;
