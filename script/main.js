@@ -44,7 +44,7 @@ if (code === null) {
   content.appendChild(msg1);
   content.appendChild(msg2);
   content.appendChild(img);
-}/*
+}
 else{
   const level = validatePasscode(code);
   if (level === null || level <= 0 || level > 69) {
@@ -107,4 +107,4 @@ else{
     }
   }
 }
-*/
+
