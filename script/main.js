@@ -98,11 +98,13 @@ else{
       const img = document.createElement('img');
       img.src = `image/rick.gif`
       img.alt = '你輸了';
+      img.style.display = 'block';
       const btn = document.createElement('button');
       btn.textContent = '前往主選單';
       btn.onclick = function () {
         window.location.href = 'https://douob000.github.io/qr_challenge/';
       };
+      btn.style.display = 'block';
       content.appendChild(h2);
       content.appendChild(msg);
       content.appendChild(img);
