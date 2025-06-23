@@ -79,11 +79,14 @@ else{
   else {
     const rd = Math.random();
     if (rd <= 0.93) {
+      const h2 = document.createElement('h2');
+      h2.textContent = '恭喜過關！';
       const msg = document.createElement('p');
       msg.textContent = `得分：${level}`;
       const img = document.createElement('img');
-      img.src = `image/qr/{level+1}.png`
+      img.src = `image/qr/${level+1}.png`
       img.alt = '下一關';
+      content.appendChild(h2);
       content.appendChild(msg);
       content.appendChild(img);
     }
