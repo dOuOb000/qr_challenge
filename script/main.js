@@ -1,3 +1,4 @@
+/*
 function decodeLevel(str) {
   return parseInt(str.slice(1)) - 13;
 }
@@ -23,7 +24,7 @@ function validatePasscode(passcode) {
   }
   return null;
 }
-
+*/
 
 const params = new URLSearchParams(window.location.search);
 const code = params.get('code');
