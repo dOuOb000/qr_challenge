@@ -58,37 +58,39 @@ else{
     content.appendChild(msg);
     content.appendChild(btn);
   }
-  else if (level === 69) {
-    const h2 = document.createElement('h2');
-    h2.textContent = '你贏了🎉';
-    const msg = document.createElement('p');
-    msg.textContent = '成功到達第69層！';
-    const img = document.createElement('img');
-    img.src = `image/cat.gif`
-    img.alt = '你贏了';
-    const btn = document.createElement('button');
-    btn.textContent = '再玩一次';
-    btn.onclick = function () {
-      window.location.href = 'https://douob000.github.io/qr_challenge/';
-    };
-    content.appendChild(h2);
-    content.appendChild(msg);
-    content.appendChild(img);
-    content.appendChild(btn);
-  }
   else {
     const rd = Math.random();
     if (rd <= 0.93) {
-      const h2 = document.createElement('h2');
-      h2.textContent = '恭喜過關！';
-      const msg = document.createElement('p');
-      msg.textContent = `得分：${level}`;
-      const img = document.createElement('img');
-      img.src = `image/qr/${level+1}.png`
-      img.alt = '下一關';
-      content.appendChild(h2);
-      content.appendChild(msg);
-      content.appendChild(img);
+      if (level === 69) {
+        const h2 = document.createElement('h2');
+        h2.textContent = '你贏了🎉';
+        const msg = document.createElement('p');
+        msg.textContent = '成功到達第69層！';
+        const img = document.createElement('img');
+        img.src = `image/cat.gif`
+        img.alt = '你贏了';
+        const btn = document.createElement('button');
+        btn.textContent = '再玩一次';
+        btn.onclick = function () {
+          window.location.href = 'https://douob000.github.io/qr_challenge/';
+        };
+        content.appendChild(h2);
+        content.appendChild(msg);
+        content.appendChild(img);
+        content.appendChild(btn);
+      }
+      else {
+        const h2 = document.createElement('h2');
+        h2.textContent = '恭喜過關！';
+        const msg = document.createElement('p');
+        msg.textContent = `得分：${level}`;
+        const img = document.createElement('img');
+        img.src = `image/qr/${level+1}.png`
+        img.alt = '下一關';
+        content.appendChild(h2);
+        content.appendChild(msg);
+        content.appendChild(img);
+      }
     }
     else {
       const h2 = document.createElement('h2');
